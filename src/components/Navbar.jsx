@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 function Navbar (){
     return(
         <>
-            <div className="container-fluid nav-bag">
-                <div className="row">
+            <div className="container-fluid nav-bag position-sticky">
+                <div className="row border-bottom">
                     <div className="col-11 mx-auto">
                         <div className="pt-5 pt-lg-0 order-2 order-lg-1 ">
                             <nav className="navbar navbar-expand-lg">
@@ -15,9 +15,9 @@ function Navbar (){
                                             <span className="navbar-toggler-icon"></span>
                                     </button>
                                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                                        <ul className="navbar-nav ml-auto mb-2 mb-lg-0 ">
+                                        <ul className="navbar-nav ml-auto mb-2 mb-lg-0 gap-3">
                                             <li className="nav-item">
-                                                <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                                                <Link className="nav-link" aria-current="page" to="/">Home</Link>
                                             </li>
                                             <li className="nav-item">
                                                 <Link className="nav-link" to="/service">Services</Link>

@@ -29,7 +29,9 @@
 
 .navbar .nav-link:hover{
   color: #3498db !important;
+  border-bottom: 1px solid #3498db;
 }
+
 
 .menu-active{
   font-weight: bold;
@@ -39,8 +41,83 @@
 .btn-get-started {
   width: 120px;
   height: 40px;  
+  border: 1px solid #0275d8;
+  transition: all 0.2s;
+}
+
+.btn-get-started:hover{
+  background-color: #0275d8;
+}
+
+.btn-get-started > .hero-btn {
+  color: #0275d8;
+  transition: all 0.2s;
+}
+
+.btn-get-started:hover > .hero-btn {
+  color: white;
 }
 
 #header{
   height: 90vh !important;
+}
+
+.card-img-top {
+  padding-top: 20px;
+  width: 200px !important;
+  height: 200px;
+  transition: all 0.7s;
+}
+
+.card-read-more{
+  color: black;
+}
+
+.card-read-more:hover{
+  color: #0275d8 !important;
+  cursor: pointer;
+}
+
+.card-body{
+  background-color: white;
+  color: black !important;
+  transition: all 0.7s;
+}
+
+
+.card-body:hover > .card-text {
+  color: gray;
+}
+
+.card-body:hover > .card-title {
+  color: #0275d8 !important;
+}
+
+.hero-section-img {
+  animation: up-down 4s infinite ease-in-out;
+}
+
+.card-img-container{
+  height: 150px;
+  background-image: url("../public/hero-section-image.jpg");
+  background-position: 50% 30px;
+  background-size: 170px 170px;
+  background-repeat: no-repeat;
+  transition: all 0.7s;
+}
+
+.card-img-container:hover{
+  background-size: 200px 200px;
+}
+
+@keyframes up-down{
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-40px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
 }

@@ -15,12 +15,13 @@ const Footer = () => {
                                     </p>
                                 </div>
                                 <div className="col-md-5 col-12">
-                                    <div className="form-outline form-white mb-4">
-                                        <input type="email" id="form5Example2" className="form-control" placeholder="Email Address"/>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                        <input type="text" class="form-control" placeholder="Email" aria-label="email" aria-describedby="basic-addon1"/>
                                     </div>
                                 </div>
                             <div class="col-auto">
-                                <button type="submit" className="btn btn-outline-primary mb-4 text-white">
+                                <button type="submit" className="btn btn-outline-primary mb-4" onClick={(e) => e.preventDefault() }>
                                     Subscribe
                                 </button>
                             </div>

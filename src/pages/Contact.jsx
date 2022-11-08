@@ -1,5 +1,6 @@
 import React from "react";
 import CommonSection from "../components/CommonSection"
+import ContactCard from "../components/ContactCard";
 
 const Contact = () =>{
     const page ={
@@ -11,6 +12,15 @@ const Contact = () =>{
     return(
         <>
             <CommonSection {...page}/>
+            <section className="py-3">
+                <div className="container-fluid">
+                    <div className="row ">
+                        <div className="col-4 mx-auto shadow p-3 mb-5 bg-body rounded"> 
+                            <ContactCard />
+                        </div>
+                    </div>
+                </div>
+            </section>
         </>
     )
 }
